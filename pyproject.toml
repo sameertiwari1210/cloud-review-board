@@ -1,0 +1,10 @@
+[project]
+name = "csrb-agent"
+version = "1.0.0"
+description = "Cloud Security Review Board — a first-principles Agentic AI learning project built without any AI framework."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.44.0",
+    "python-dotenv>=1.2.2",
+]

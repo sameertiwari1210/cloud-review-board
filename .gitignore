@@ -1,9 +1,13 @@
-# Byte-compiled / optimized / DLL files
+# ==============================================================================
+# .gitignore — Cloud Security Review Board (CSRB) Agent
+# ==============================================================================
+
+# ----- Python byte-compiled files -----
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Environments
+# ----- Virtual environments -----
 .venv/
 env/
 venv/
@@ -11,11 +15,32 @@ ENV/
 env.bak/
 venv.bak/
 
-# Active Configuration files containing API keys
+# ----- Secrets & API keys (NEVER commit these) -----
 .env
 .env.local
 .env.*.local
 
-# IDE configurations
+# ----- Runtime-generated data (auto-created on first run) -----
+data/csrb.db
+data/memory.json
+
+# ----- uv package manager -----
+# Uncomment the line below if you prefer not to commit the lock file:
+# uv.lock
+
+# ----- Testing & coverage -----
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+
+# ----- IDE & editor configs -----
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# ----- OS noise -----
+.DS_Store
+Thumbs.db
+desktop.ini
