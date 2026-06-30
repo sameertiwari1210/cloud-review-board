@@ -155,7 +155,7 @@ project/
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/cloud-review-board.git
+git clone https://github.com/sameertiwari1210/cloud-review-board.git
 cd cloud-review-board
 ```
 
